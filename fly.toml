@@ -35,7 +35,8 @@ kill_timeout = '5m0s'
   cpu_kind = 'shared'
   cpus = 1
   memory_mb = 1024
-Create the Dockerfile. The example below is a multi-stage docker build of Payload for production.
+
+# Create the Dockerfile. The example below is a multi-stage docker build of Payload for production.
 
 # syntax=docker.io/docker/dockerfile:1
 
