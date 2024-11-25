@@ -1,11 +1,11 @@
 # # flyctl launch added from .gitignore
-# **\build
-# **\dist \ media
-# **\node_modules
-# **\.DS_Store
-# **\.env
-# **\.next
-# **\.vercel
+**\build
+**\dist \ media
+**\node_modules
+**\.DS_Store
+**\.env
+**\.next
+**\.vercel
 
 # Payload default media upload directory
 # **\public\media
