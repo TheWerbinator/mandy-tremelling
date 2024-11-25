@@ -66,8 +66,7 @@ export default buildConfig({
       url: process.env.DATABASE_URI || '',
     },
     //  Add the path to migrations folder
-    migrationDir: './src/migrations',
-    prodMigrations: migrations
+    migrationDir: './src/migrations'
   }),
   collections: [Pages, Posts, Media, Categories, Users],
   cors: [getServerSideURL()].filter(Boolean),
