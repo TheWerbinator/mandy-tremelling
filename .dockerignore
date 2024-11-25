@@ -8,5 +8,5 @@
 # **\.vercel
 
 # Payload default media upload directory
-**\public\media
-fly.toml
+# **\public\media
+# fly.toml
