@@ -1,6 +1,7 @@
 import { cn } from 'src/utilities/cn'
 import React from 'react'
 import RichText from '@/components/RichText'
+import { Media } from '@/components/Media'
 
 import type { ContentBlock as ContentBlockProps } from '@/payload-types'
 
@@ -31,9 +32,19 @@ export const ContentBlock: React.FC<ContentBlockProps> = (props) => {
                 })}
                 key={index}
               >
-                {richText && <RichText content={richText} enableGutter={false} />}
-
-                {enableLink && <CMSLink {...link} />}
+                <div className='content-block-content'>
+                  {richText && <RichText content={richText} enableGutter={false} />}
+                  {enableLink && <CMSLink {...link} />}
+                </div>
+                {/* {media && typeof media === 'object' && (
+                  <Media
+                    fill
+                    imgClassName="-z-10 object-cover"
+                    priority={false}
+                    loading="lazy"
+                    resource={media}
+                  />
+                )} */}
               </div>
             )
           })}

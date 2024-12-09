@@ -1,6 +1,9 @@
 'use client'
 import { useHeaderTheme } from '@/providers/HeaderTheme'
 import React, { useEffect } from 'react'
+import Image from 'next/image'
+
+import mandy from '../../../public/melina.jpg'
 
 import type { Page } from '@/payload-types'
 
@@ -17,11 +20,12 @@ export const HighImpactHero: React.FC<Page['hero']> = ({ links, media, richText 
 
   return (
     <div
-      className="relative -mt-[10.4rem] flex items-center justify-center text-white"
+      className="relative flex items-center justify-center text-white"
       data-theme="dark"
     >
-      <div className="container mb-8 z-10 relative flex items-center justify-center">
-        <div className="max-w-[36.5rem] text-center">
+      <div className="container mb-8 z-10 relative flex flex-wrap gap-5 items-center justify-center">
+        <Image src={mandy} className="max-w-[36.5rem] rounded-2xl" alt='Headshot of Mandy Tremelling' width={510} height={640} />
+        <div className="max-w-[36.5rem] text-center bg-black bg-opacity-80 p-5 rounded-2xl">
           {richText && <RichText className="mb-6" content={richText} enableGutter={false} />}
           {Array.isArray(links) && links.length > 0 && (
             <ul className="flex justify-center gap-4">
