@@ -37,13 +37,14 @@ export const ContentBlock: React.FC<ContentBlockProps> = (props) => {
                   {enableLink && <CMSLink {...link} />}
                 </div>
                 {media && typeof media === 'object' && (
-                  <Media
-                    fill
-                    imgClassName="-z-10 object-cover"
-                    priority={false}
-                    loading="lazy"
-                    resource={media}
-                  />
+                  <div className="flex justify-center">
+                    <Media
+                      imgClassName="-z-10 object-cover relative"
+                      priority={false}
+                      loading="lazy"
+                      resource={media}
+                    />
+                  </div>
                 )}
               </div>
             )

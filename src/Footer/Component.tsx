@@ -29,6 +29,10 @@ export async function Footer() {
           </nav>
         </div>
       </div>
+      <div className='disclaimers bg-white flex justify-center gap-8'>
+        <p className='text-black'>Copyright © 2024 Mandy Tremelling</p>
+        <p className="made-by text-black">Created by <a href='nextlevelweb.tech'>Next Level Web</a></p>
+      </div>
     </footer>
   )
 }

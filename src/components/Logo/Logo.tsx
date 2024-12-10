@@ -22,7 +22,7 @@ export const Logo = (props: Props) => {
       loading={loading}
       fetchPriority={priority}
       decoding="async"
-      className={clsx('max-w-[9.375rem] w-full', className)}
+      className={clsx('max-w-[12rem] w-full', className)}
       src='http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fmedia%2Ffile%2Flogo.webp&w=64&q=100'
     />
   )
