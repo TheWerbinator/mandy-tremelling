@@ -52,6 +52,13 @@ const columnFields: Field[] = [
     name: 'enableLink',
     type: 'checkbox',
   },
+  {
+    name: 'media',
+    label: 'Media',
+    type: 'upload',
+    relationTo: 'media',
+    required: false,
+  },
   link({
     overrides: {
       admin: {

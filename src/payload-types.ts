@@ -280,6 +280,7 @@ export interface ContentBlock {
           [k: string]: unknown;
         } | null;
         enableLink?: boolean | null;
+        media?: (number | null) | Media;
         link?: {
           type?: ('reference' | 'custom') | null;
           newTab?: boolean | null;
@@ -827,6 +828,7 @@ export interface PagesSelect<T extends boolean = true> {
                     size?: T;
                     richText?: T;
                     enableLink?: T;
+                    media?: T;
                     link?:
                       | T
                       | {

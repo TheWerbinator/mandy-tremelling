@@ -23,7 +23,7 @@ export const ContentBlock: React.FC<ContentBlockProps> = (props) => {
         {columns &&
           columns.length > 0 &&
           columns.map((col, index) => {
-            const { enableLink, link, richText, size } = col
+            const { enableLink, link, richText, size, media } = col
 
             return (
               <div
@@ -36,7 +36,7 @@ export const ContentBlock: React.FC<ContentBlockProps> = (props) => {
                   {richText && <RichText content={richText} enableGutter={false} />}
                   {enableLink && <CMSLink {...link} />}
                 </div>
-                {/* {media && typeof media === 'object' && (
+                {media && typeof media === 'object' && (
                   <Media
                     fill
                     imgClassName="-z-10 object-cover"
@@ -44,7 +44,7 @@ export const ContentBlock: React.FC<ContentBlockProps> = (props) => {
                     loading="lazy"
                     resource={media}
                   />
-                )} */}
+                )}
               </div>
             )
           })}
