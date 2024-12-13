@@ -23,7 +23,7 @@ export const Logo = (props: Props) => {
       fetchPriority={priority}
       decoding="async"
       className={clsx('max-w-[12rem] w-full', className)}
-      src='https://mandy-payload.s3.us-west-1.amazonaws.com/logo-300x300.webp'
+      src='../../../public/logo-300x300.webp'
     />
   )
 }
