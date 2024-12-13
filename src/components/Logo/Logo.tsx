@@ -23,7 +23,7 @@ export const Logo = (props: Props) => {
       fetchPriority={priority}
       decoding="async"
       className={clsx('max-w-[12rem] w-full', className)}
-      src='http://localhost:3000/_next/image?url=http%3A%2F%2Flocalhost%3A3000%2Fapi%2Fmedia%2Ffile%2Flogo.webp&w=64&q=100'
+      src='https://us-west-1.console.aws.amazon.com/s3/object/mandy-payload?region=us-west-1&bucketType=general&prefix=original-images/melina.jpg'
     />
   )
 }
