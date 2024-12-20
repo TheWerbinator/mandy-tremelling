@@ -3,7 +3,7 @@ import { useHeaderTheme } from '@/providers/HeaderTheme'
 import React, { useEffect } from 'react'
 import Image from 'next/image'
 
-import mandy from '../../../public/melina.jpg'
+import mandy from '../../../public/mandy.webp'
 
 import type { Page } from '@/payload-types'
 
