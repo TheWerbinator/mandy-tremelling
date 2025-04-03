@@ -22,17 +22,11 @@ import { migrations } from './migrations'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
+const serverURL = process.env.NEXT_PUBLIC_SERVER_URL || 'https://mandytremelling.com'
 
 export default buildConfig({
+  serverURL,
   admin: {
-    components: {
-      // The `BeforeLogin` component renders a message that you see while logging into your admin panel.
-      // Feel free to delete this at any time. Simply remove the line below and the import `BeforeLogin` statement on line 15.
-      beforeLogin: ['@/components/BeforeLogin'],
-      // The `BeforeDashboard` component renders the 'welcome' block that you see after logging into your admin panel.
-      // Feel free to delete this at any time. Simply remove the line below and the import `BeforeDashboard` statement on line 15.
-      beforeDashboard: ['@/components/BeforeDashboard'],
-    },
     importMap: {
       baseDir: path.resolve(dirname),
     },
@@ -85,7 +79,6 @@ export default buildConfig({
           secretAccessKey: process.env.S3_SECRET_ACCESS_KEY as string,
         },
         region: process.env.S3_REGION,
-        // ... Other S3 configuration
       },
     }),
   ],
