@@ -8,6 +8,7 @@ export const getServerSideURL = () => {
   }
 
   if (!url) {
+    console.log('url not found for prod')
     url = 'http://localhost:3000'
   }
 
