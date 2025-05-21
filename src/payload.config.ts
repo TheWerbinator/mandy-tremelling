@@ -22,7 +22,7 @@ import { migrations } from './migrations'
 
 const filename = fileURLToPath(import.meta.url)
 const dirname = path.dirname(filename)
-const serverURL = process.env.NEXT_PUBLIC_SERVER_URL || 'https://mandytremelling.com'
+const serverURL = process.env.NEXT_PUBLIC_SERVER_URL
 
 export default buildConfig({
   serverURL,
