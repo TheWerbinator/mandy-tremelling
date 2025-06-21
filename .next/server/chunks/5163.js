@@ -1,1 +1,0 @@
-"use strict";exports.id=5163,exports.ids=[5163],exports.modules={95163:(e,n,o)=>{o.r(n),o.d(n,{UnknownConvertedNodeComponent:()=>d});var r=o(60687);o(43210);var d=e=>{let{data:n}=e;return(0,r.jsxs)("div",{children:["Unknown converted Slate node: ",(0,r.jsx)("strong",{children:n?.nodeType})]})}}};
