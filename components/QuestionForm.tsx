@@ -1,15 +1,14 @@
 "use client";
-import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { CircleX, PartyPopper } from "lucide-react";
 import { Button } from "./ui/button";
+import { Alert, AlertTitle } from "./ui/alert";
 
 export default function QuestionForm({
   referringPage,
 }: {
   referringPage: string;
 }) {
-  const router = useRouter();
   const [status, setStatus] = useState<
     "idle" | "sending" | "success" | "error"
   >("idle");
@@ -21,10 +20,9 @@ export default function QuestionForm({
     if (form.website.value) return;
     const data = {
       first_name: form.first_name.value,
-      last_name: form.last_name.value,
       email: form.email.value,
-      phone: form.phone.value,
       message: form.message.value,
+      referrer: referringPage,
     };
 
     const res = await fetch("/api/contact", {
@@ -34,7 +32,6 @@ export default function QuestionForm({
     });
 
     setStatus(res.ok ? "success" : "error");
-    if (res.ok) router.push("/thanks");
   };
 
   return (
@@ -81,24 +78,27 @@ export default function QuestionForm({
           style={{ display: "none" }}
         />
         {status === "success" && (
-          <div className='form-message form-message-success'>
+          <Alert className='mt-4 w-fit' variant={"success"}>
             <PartyPopper />
-            <p>Message sent!</p>
-          </div>
+
+            <AlertTitle>Message sent!</AlertTitle>
+          </Alert>
         )}
         {status === "error" && (
-          <div className='form-message form-message-error'>
+          <Alert className='mt-4 w-fit' variant={"destructive"}>
             <CircleX />
-            <p>Something went wrong. Please contact me by email.</p>
-          </div>
+            <AlertTitle>
+              Something went wrong. Please contact me by email.
+            </AlertTitle>
+          </Alert>
         )}
 
         <Button
-          className='w-fit mt-4'
+          className='w-fit mt-4 cursor-pointer'
           type='submit'
           disabled={status === "sending"}
         >
-          {status === "sending" ? "Sending…" : "Count Me In!"}
+          {status === "sending" ? "Sending…" : "Send the Raven"}
         </Button>
       </form>
     </div>

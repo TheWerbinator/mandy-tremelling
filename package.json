@@ -8,8 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "sanity": "sanity dev",
-    "sanity_start": "sanity start",
-    "sanity_build": "sanity build",
+    "sanity-start": "sanity start",
+    "sanity-build": "sanity build",
     "deploy": "sanity deploy",
     "deploy-graphql": "sanity graphql deploy"
   },

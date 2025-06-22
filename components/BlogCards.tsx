@@ -34,12 +34,12 @@ const BlogCards = async ({
         return (
           <Link
             href={`/posts/${post.currentSlug}`}
-            className='card flex flex-col align-center w-[90%] lg:w-[32%] lg:max-w-[48vw] bg-zinc-100 dark:bg-neutral-950 hover:shadow-lg'
+            className='group flex flex-col align-center w-[90%] md:w-[45%] lg:w-[32%] lg:max-w-[48vw] bg-zinc-100 dark:bg-neutral-950 hover:shadow-(--box-shadow) rounded-sm overflow-hidden dark:shadow-zinc-500'
             key={`post ${index}`}
           >
             <div className='m-0 p-0 overflow-hidden w-full'>
               <Image
-                className='w-full h-auto aspect-square  object-cover object-top card-hover:transform-[scale(1.025)] card-hover:transform-[translateZ(1px)]'
+                className='w-full h-auto aspect-square object-cover object-top group-hover:scale-[1.025] group-hover:translate-z-1 transition-all'
                 src={urlFor(post.mainImage).url()}
                 alt={post.imageAlt}
                 width={500}

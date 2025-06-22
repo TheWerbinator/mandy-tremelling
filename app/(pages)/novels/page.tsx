@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 
+import mandy from "../../../public/media/novels.jpg";
 import pulchra from "../../../public/media/pulchra.webp";
 import mwog from "../../../public/media/My World of Glass cover.jpg";
 
@@ -20,11 +21,23 @@ export const metadata: Metadata = {
 const Novels = () => {
   return (
     <div className='max-w-7xl' id='novels'>
-      <section className='w-full mx-auto py-8 px-4 sm:px-6 lg:px-8'>
-        <h1 className='text-7xl'>Mandy&apos;s Novels</h1>
-        <p className='mt-2'>
-          The complete works - book to book, cover to cover.
-        </p>
+      <section className='w-full mx-auto py-8 px-4 sm:px-6 lg:px-8 flex flex-col lg:flex-row-reverse justify-center items-center lg:items-start gap-6'>
+        <div className='w-full lg:w-[60%]'>
+          <h1 className='text-7xl'>Mandy&apos;s Novels</h1>
+          <p className='mt-2'>
+            The complete works - book to book, cover to cover.
+          </p>
+        </div>
+        <div className='w-full lg:w-[35%]'>
+          <Image
+            src={mandy}
+            alt=''
+            width={600}
+            height={900}
+            sizes='(max-width: 800px) 90vw, 50vw'
+            className='rounded-xl lg:w-1/2 mx-auto'
+          />
+        </div>
       </section>
       {/* Pulchra Arcanum */}
       <section id='pulchra' className='w-full mx-auto'>

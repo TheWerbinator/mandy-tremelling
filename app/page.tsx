@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <>
       <section className='max-w-7xl'>
-        <div className='mx-auto px-4 sm:px-6 lg:px-8'>
+        <div className='mx-auto mt-8 px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-col lg:flex-row justify-evenly items-center gap-10 w-full'>
             <div className='flex flex-col items-center w-full lg:w-1/2 text-center bg-black opacity-80 p-5 rounded-2xl prose dark:prose-invert'>
               <h1 className='font-normal text-4xl font-bold text-gray-200 tracking-tight sm:text-5xl md:text-6xl'>
@@ -37,11 +37,11 @@ export default function Home() {
                   className='font-medium flex items-center text-xl transition-colors bg-white text-black hover:bg-white/80 py-2 px-4 rounded-md'
                   prefetch={false}
                 >
-                  Contact
+                  Let&apos;s Talk!
                 </Link>
               </div>
             </div>
-            <div className='mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex lg:items-center'>
+            <div className='mt-12 relative sm:max-w-lg sm:mx-auto lg:mt-0 lg:max-w-none lg:mx-0 lg:col-span-6 lg:flex w-full lg:w-[50%] lg:items-center'>
               <Image
                 className='rounded-xl'
                 src={mandy}
