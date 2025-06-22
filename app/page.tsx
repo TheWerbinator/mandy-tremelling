@@ -14,7 +14,7 @@ export default function Home() {
         <div className='mx-auto mt-8 px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-col lg:flex-row justify-evenly items-center gap-10 w-full'>
             <div className='flex flex-col items-center w-full lg:w-1/2 text-center bg-black opacity-80 p-5 rounded-2xl prose dark:prose-invert'>
-              <h1 className='font-normal text-4xl font-bold text-gray-200 tracking-tight sm:text-5xl md:text-6xl'>
+              <h1 className='font-normal text-4xl font-bold text-slate-50 tracking-tight sm:text-5xl md:text-6xl'>
                 Mandy Tremelling
               </h1>
               <p className='mt-3 text-base text-gray-200 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
