@@ -1,7 +1,7 @@
 // /app/api/contact/route.ts
 import { NextResponse } from "next/server";
 
-const logo_url = "https://www.mandytremelling.com/logo.png";
+const logo_url = "https://www.mandytremelling.com/logo.webp";
 
 export async function POST(req: Request) {
   const form = await req.json();

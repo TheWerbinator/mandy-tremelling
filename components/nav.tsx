@@ -5,7 +5,7 @@
  */
 import Link from "next/link";
 import Image from "next/image";
-import mandy_logo from "../public/logo-300x300.webp";
+import mandy_logo from "../public/logo.webp";
 
 export default function Nav() {
   return (
