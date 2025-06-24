@@ -2,10 +2,11 @@ import Image from "next/image";
 import mandy from "../public/mandy.webp";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import BlogCards from "@/components/BlogCards";
 
 import pulchra from "../public/media/pulchra.webp";
 import mwog from "../public/media/My World of Glass cover.jpg";
-import BlogCards from "@/components/BlogCards";
+import release_banner from "../public/media/banner.png";
 
 export default function Home() {
   return (
@@ -53,6 +54,14 @@ export default function Home() {
       </section>
 
       <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
+        <Link href='https://www.facebook.com/share/16jWpmJBJ3/'>
+          <Image
+            className='w-full'
+            src={release_banner}
+            alt='banner with details about the release of Pulchra Arcanum'
+            sizes='100vw'
+          />
+        </Link>
         <div className='mx-auto py-8 px-4 sm:px-6 lg:px-8 w-full flex flex-col-reverse lg:flex-row justify-between gap-8'>
           <div className='w-full lg:w-[30%]'>
             <Image

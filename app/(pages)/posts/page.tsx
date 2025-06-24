@@ -3,11 +3,11 @@ import type { Metadata } from "next";
 import BlogCards from "@/components/BlogCards";
 
 export const metadata: Metadata = {
-  title: "Blog Posts from Elevation | Web & Marketing Experts",
-  description: "Read up on the best web advice for 2025.",
+  title: "Blog Posts Mandy Tremelling",
+  description: "Read up on novel updates, writing insights, and resources",
   openGraph: {
-    title: "Blog Posts from Elevation | Web & Marketing Experts",
-    description: "Read up on the best web advice for 2025.",
+    title: "Blog Posts Mandy Tremelling",
+    description: "Read up on novel updates, writing insights, and resources",
   },
 };
 
