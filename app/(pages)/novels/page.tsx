@@ -42,6 +42,54 @@ const Novels = () => {
       {/* Pulchra Arcanum */}
       <section id='pulchra' className='w-full mx-auto'>
         <div className='mx-auto py-8 px-4 sm:px-6 lg:px-8 w-full flex flex-col-reverse lg:flex-row justify-between gap-8'>
+          <div className='flex flex-col items-start w-full lg:w-[30%]'>
+            <strong className='text-3xl'>Out Now!</strong>
+            <p className='text-xl pb-4 mt-8'>
+              <h2>
+                <em className='text-4xl'>Pulchra Arcanum</em>
+              </h2>
+              <br />
+              (Book 1 of the Domum Chronicles)
+              <br />
+              by Mandy Tremelling
+            </p>
+            <h3 className='text-xl font-semibold'>
+              Available in THREE formats:
+            </h3>
+            <ul className='flex flex-col gap-4 mt-4'>
+              <li>
+                <Button>
+                  <Link href='https://shop.ingramspark.com/b/084?params=wf6Of0y0afO32yyOq09iGl9gH7WwNgZSkv0WIFp0Iuq'>
+                    Paperback
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button>
+                  <Link href='https://shop.ingramspark.com/b/084?params=EeKkSTysY36wID0YvevcHcH3SYs9wts3xOwYG8nHbUA'>
+                    Hardcover (which includes a bonus chapter)
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button>
+                  <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356?ean=9798998838019'>
+                    eBook
+                  </Link>
+                </Button>
+              </li>
+            </ul>
+          </div>
+          <div className='w-full lg:w-[30%]'>
+            <Image
+              src={pulchra}
+              alt='The cover of Pulchra Arcanum with the dragon, wings spread, in front of the setting sun'
+              width={600}
+              height={900}
+              sizes='(max-width: 600px) 90vw, 45vw'
+              className='w-[80%] mx-auto'
+            />
+          </div>
           <div className='flex flex-col flex-start gap-2 w-full lg:w-[30%]'>
             <strong className='font-bold italic'>Merlin is a liar.</strong>
             <strong className='font-bold italic'>Arthur is vengeful.</strong>
@@ -66,49 +114,6 @@ const Novels = () => {
               this <strong className='font-bold'>Arthurian retelling</strong>{" "}
               will keep you on the edge of your seat until the very end.
             </p>
-          </div>
-          <div className='w-full lg:w-[30%]'>
-            <Image
-              src={pulchra}
-              alt='The cover of Pulchra Arcanum with the dragon, wings spread, in front of the setting sun'
-              width={600}
-              height={900}
-              sizes='(max-width: 600px) 90vw, 45vw'
-              className='w-[80%] mx-auto'
-            />
-          </div>
-          <div className='flex flex-col items-start w-full lg:w-[30%]'>
-            <h2 className='text-7xl'>Coming Soon!</h2>
-            <p className='text-xl pb-4 mt-8'>
-              Launching August 1, 2025: <em>Pulchra Arcanum</em> (Book 1 of the
-              Domum Chronicles) by Mandy Tremelling
-            </p>
-            <h3 className='text-xl font-semibold'>
-              At this time there will be THREE formats:
-            </h3>
-            <ul className='flex flex-col gap-4 mt-4'>
-              <li>
-                <Button>
-                  <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356'>
-                    Paperback
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button>
-                  <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356?ean=9798998838026'>
-                    Hardcover (which includes a bonus chapter)
-                  </Link>
-                </Button>
-              </li>
-              <li>
-                <Button>
-                  <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356?ean=9798998838019'>
-                    eBook
-                  </Link>
-                </Button>
-              </li>
-            </ul>
           </div>
         </div>
       </section>

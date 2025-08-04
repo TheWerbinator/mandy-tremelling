@@ -6,7 +6,7 @@ import BlogCards from "@/components/BlogCards";
 
 import pulchra from "../public/media/pulchra.webp";
 import mwog from "../public/media/My World of Glass cover.jpg";
-import release_banner from "../public/media/banner.png";
+// import release_banner from "../public/media/banner.png";
 
 export default function Home() {
   return (
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
+      {/* <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
         <Link href='https://www.facebook.com/share/16jWpmJBJ3/'>
           <Image
             className='w-full'
@@ -132,6 +132,80 @@ export default function Home() {
             </ul>
           </div>
         </div>
+      </section> */}
+
+      <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
+        <div className='mx-auto py-8 px-4 sm:px-6 lg:px-8 w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-8'>
+          <div className='w-full lg:w-[30%]'>
+            <Image
+              src={pulchra}
+              alt='The cover of Pulchra Arcanum with the dragon, wings spread, in front of the setting sun'
+              width={600}
+              height={900}
+              sizes='(max-width: 600px) 90vw, 45vw'
+              className='mx-auto'
+            />
+          </div>
+          <div className='flex flex-col flex-start gap-2 w-full lg:w-[65%]'>
+            <h2 className='text-4xl'>Now Out!</h2>
+            <p className='text-xl pb-4'>
+              <em className='text-3xl'>Pulchra Arcanum</em>
+              <br />
+              (Book 1 of the Domum Chronicles)
+              <br />
+              by Mandy Tremelling
+            </p>
+            <strong className='font-bold italic'>Merlin is a liar.</strong>
+            <strong className='font-bold italic'>Arthur is vengeful.</strong>
+            <strong className='font-bold italic'>Megara is lost.</strong>
+            <p className='mt-3'>
+              Raised by the legendary{" "}
+              <strong className='font-bold'>Merlin</strong>, Megara always knew
+              she was destined for great things. When the truth about her past
+              is revealed and Merlin is killed, Megara is forced to flee and
+              return to her roots.
+            </p>
+            <p className='mt-3'>
+              With her unlikely animal sidekick Superus and newfound friends Leo
+              and Adina, Megara learns more about who she is. When{" "}
+              <strong className='font-bold'>King Arthur</strong> seeks revenge
+              she must choose between embracing her fate or succumbing to the
+              darkness within her.
+            </p>
+            <p className='mt-3'>
+              With <strong className='font-bold'>unreliable narration</strong>{" "}
+              and a <strong className='font-bold'>slow burn romance</strong>,
+              this <strong className='font-bold'>Arthurian retelling</strong>{" "}
+              will keep you on the edge of your seat until the very end.
+            </p>
+            <h3 className='text-xl font-semibold'>
+              Available now in THREE formats:
+            </h3>
+            <ul className='flex flex-row flex-wrap gap-4'>
+              <li>
+                <Button>
+                  <Link href='https://shop.ingramspark.com/b/084?params=wf6Of0y0afO32yyOq09iGl9gH7WwNgZSkv0WIFp0Iuq'>
+                    Paperback
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button>
+                  <Link href='https://shop.ingramspark.com/b/084?params=EeKkSTysY36wID0YvevcHcH3SYs9wts3xOwYG8nHbUA'>
+                    Hardcover (which includes a bonus chapter)
+                  </Link>
+                </Button>
+              </li>
+              <li>
+                <Button>
+                  <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356?ean=9798998838019'>
+                    eBook
+                  </Link>
+                </Button>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
@@ -161,9 +235,9 @@ export default function Home() {
                 Available now in three formats: <br />
                 Paperback, eBook (KU), and Audiobook
               </h3>
-              <ul className='flex flex-col gap-4'>
+              <ul className='flex flex-row flex-wrap gap-4'>
                 <li>
-                  <Button variant={"outline"}>
+                  <Button>
                     <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356'>
                       Bookshop.org
                     </Link>
@@ -177,7 +251,7 @@ export default function Home() {
                 </Button>
               </li> */}
                 <li>
-                  <Button variant={"outline"}>
+                  <Button>
                     <Link href='https://www.amazon.com/My-World-Glass-Mandy-Tremelling/dp/1726835111/ref=sr_1_1?crid=2LCPKQ4DGI3MX&dib=eyJ2IjoiMSJ9.0rwL-iLf4hBC_sx3W1acRh7UtV1pr4mMNTJzXmocOnQT9G1BSQs37jIPBFKX325sje7ZCyalYumPbBjXWb9Tf_M3ogPZsLYEvoJMNxyrld3JscBaw70o305HzI62_KTMKajOG6y250Rc41uhMA8ghX1KgI-TclvfVETpaSYy75YXRzMEX0NtnEcZr0pNqU23bsWRKutXs2RpQ4d-Imkt_VHkIdBfa86MdRccflTgT1g.VguVNM_AJnqrrmn9Aa-0QWVaKL3vXrm1Z9zgv1oAKIU&dib_tag=se&keywords=my+world+of+glass&qid=1737645969&sprefix=%2Caps%2C137&sr=8-1'>
                       Amazon
                     </Link>
@@ -200,7 +274,7 @@ export default function Home() {
       </section>
 
       <section id='blog' className='w-full max-w-7xl px-4 lg:px-8'>
-        <div className='flex justify-between items-center w-full px-6 py-8 bg-zinc-100 dark:bg-neutral-950'>
+        <div className='flex flex-wrap gap-2 justify-between items-center w-full px-6 py-8 bg-zinc-100 dark:bg-neutral-950'>
           <div className='flex flex-col justify-start'>
             <h2 className='text-2xl font-semibold'>Read the Blog</h2>
             <p className='text-lg'>
@@ -215,7 +289,9 @@ export default function Home() {
           </Button>
         </div>
         <div className='mt-8'>
-          <h3 className='text-2xl font-semibold ml-[1%]'>Recent Posts</h3>
+          <h3 className='text-center lg:text-left text-2xl font-semibold ml-[1%]'>
+            Recent Posts
+          </h3>
           <BlogCards limit={3} currentPage={null} />
         </div>
       </section>
