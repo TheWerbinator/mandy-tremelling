@@ -115,19 +115,19 @@ export async function POST(req: Request) {
 </html>
 `;
 
-  if (form.referrer === "Contact page mailing list form") {
-    toEmails.push({
-      email: process.env.BREVO_RECEIVER_MOBILE_EMAIL!,
-      name: process.env.BREVO_RECEIVER_MOBILE!,
-    });
-  }
+  // if (form.referrer === "Contact page mailing list form") {
+  //   toEmails.push({
+  //     email: process.env.BREVO_RECEIVER_MOBILE_EMAIL!,
+  //     name: process.env.BREVO_RECEIVER_MOBILE!,
+  //   });
+  // }
 
   if (form.referrer === "Contact page questions form") {
     htmlContent = `<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>New Contact Form Submission</title>
+    <title>New Question Form Submission</title>
   </head>
   <body style="margin:0;padding:0;background-color:#F5F5F5;">
     <table
@@ -147,7 +147,7 @@ export async function POST(req: Request) {
       opacity: 0;
       overflow: hidden;
     ">
-        New referral from ${form.referrer}
+        New submission from ${form.referrer}
       </div>
       <tr>
         <td align="center">
@@ -176,7 +176,7 @@ export async function POST(req: Request) {
             <tr>
               <td style="padding:30px 30px 10px;text-align:left;">
                 <h2 style="margin:0;font-family:Arial,sans-serif;font-size:24px;line-height:28px;color:#1A1A2E;">
-                  🚀 New Contact Form Submission
+                  🚀 New Question Form Submission
                 </h2>
               </td>
             </tr>
