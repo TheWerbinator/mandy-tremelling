@@ -22,8 +22,8 @@ export default function Home() {
                 Mandy resides in a rapidly growing city in Utah with her loving
                 husband, daughter, and two dogs. She holds a degree in social
                 work which is complimented by a degree in criminal justice, and
-                has dedicated her career to child welfare--a field she is deeply
-                passionate about.
+                has dedicated her career to child welfare - a field she is
+                deeply passionate about.
               </p>
               <p className='mt-3 text-base text-gray-200 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
                 In her literary pursuits Mandy has made a mark with her debut

@@ -6,6 +6,7 @@ import Nav from "@/components/nav";
 import { Copyright } from "lucide-react";
 import { ModeToggle } from "@/components/theme-toggle";
 import Link from "next/link";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,40 @@ export const metadata: Metadata = {
   },
   other: { pinterest: "nopin" },
   metadataBase: new URL("https://mandytremelling.com"),
+  alternates: {
+    canonical: "https://mandytremelling.com",
+  },
+};
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Mandy Tremelling",
+  url: "https://mandytremelling.com",
+  logo: "https://www.mandytremelling.com/logo.webp",
+  image: "https://mandytremelling.com/opengraph-image.webp",
+  sameAs: [
+    "https://instagram.com/mandytremmy.books",
+    "https://bsky.app/profile/mandytremmy.bsky.social",
+    "https://www.goodreads.com/mandytremmy",
+  ],
+  jobTitle: "Author",
+  worksFor: {
+    "@type": "Organization",
+    name: "Independent Author",
+  },
+  knowsAbout: [
+    "Young Adult Literature",
+    "Fantasy Fiction",
+    "Writing",
+    "Publishing",
+  ],
+  description:
+    "Mandy Tremelling is a young adult and fantasy author known for immersive worlds, strong characters, and empowering stories.",
+  mainEntityOfPage: {
+    "@type": "WebPage",
+    "@id": "https://mandytremelling.com",
+  },
 };
 
 export default function RootLayout({
@@ -46,6 +81,15 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en' suppressHydrationWarning>
+      <head>
+        <Script
+          id='ld-json-schema'
+          type='application/ld+json'
+          strategy='afterInteractive'
+        >
+          {JSON.stringify(schemaData)}
+        </Script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
@@ -69,7 +113,8 @@ export default function RootLayout({
                   2025 | Mandy Tremelling
                 </div>
                 <div className='flex items-center gap-1'>
-                  Built by <Link href='https://elevation.tech'>Elevation</Link>
+                  Built by{" "}
+                  <Link href='https://mandytremelling.com'>Elevation</Link>
                 </div>
                 <ModeToggle />
               </footer>
