@@ -16,6 +16,9 @@ export const metadata: Metadata = {
     description:
       "Here you can find all of the current novels Mandy Tremelling has published or up and coming novels you can expect releasing within the next year",
   },
+  alternates: {
+    canonical: "https://mandytremelling.com/novels",
+  },
 };
 
 const Novels = () => {

@@ -21,6 +21,9 @@ export const metadata: Metadata = {
     description:
       "Let me know about any questions you have about writing or my works, keep up to date on my blog and novels, or follow me on social media!",
   },
+  alternates: {
+    canonical: "https://mandytremelling.com/contact",
+  },
 };
 
 const Contact = () => {

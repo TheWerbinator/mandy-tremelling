@@ -21,7 +21,9 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   return {
     title: post.title,
     description: post.description,
-    // you can also add openGraph, twitter, etc here
+    alternates: {
+      canonical: `https://mandytremelling.com/posts/${slug}`,
+    },
     openGraph: {
       title: post.title,
       description: post.description,

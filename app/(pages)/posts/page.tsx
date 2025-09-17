@@ -9,6 +9,9 @@ export const metadata: Metadata = {
     title: "Blog Posts Mandy Tremelling",
     description: "Read up on novel updates, writing insights, and resources",
   },
+  alternates: {
+    canonical: "https://mandytremelling.com/posts",
+  },
 };
 
 const Posts = () => {
