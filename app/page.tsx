@@ -3,9 +3,9 @@ import mandy from "../public/mandy.webp";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import BlogCards from "@/components/BlogCards";
-
+import christmas from "../public/media/christmas-book.webp";
 import pulchra from "../public/media/pulchra.webp";
-import mwog from "../public/media/My World of Glass cover.jpg";
+// import mwog from "../public/media/My World of Glass cover.jpg";
 // import release_banner from "../public/media/banner.png";
 
 export default function Home() {
@@ -15,17 +15,17 @@ export default function Home() {
         <div className='mx-auto mt-8 px-4 sm:px-6 lg:px-8'>
           <div className='flex flex-col lg:flex-row justify-evenly items-center gap-10 w-full'>
             <div className='flex flex-col items-center w-full lg:w-1/2 text-center bg-black opacity-80 p-5 rounded-2xl prose dark:prose-invert'>
-              <h1 className='font-normal text-4xl font-bold text-slate-50 tracking-tight sm:text-5xl md:text-6xl'>
+              <h1 className='font-normal text-4xl font-bold text-white tracking-tight sm:text-5xl md:text-6xl'>
                 Mandy Tremelling
               </h1>
-              <p className='mt-3 text-base text-gray-200 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
+              <p className='mt-3 text-base text-gray-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
                 Mandy resides in a rapidly growing city in Utah with her loving
                 husband, daughter, and two dogs. She holds a degree in social
                 work which is complimented by a degree in criminal justice, and
                 has dedicated her career to child welfare - a field she is
                 deeply passionate about.
               </p>
-              <p className='mt-3 text-base text-gray-200 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
+              <p className='mt-3 text-base text-gray-100 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl'>
                 In her literary pursuits Mandy has made a mark with her debut
                 novel, My World of Glass, published in 2018, with an audiobook
                 version released in 2023. Additionally she has authored two
@@ -135,22 +135,60 @@ export default function Home() {
       </section> */}
 
       <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
-        <div className='mx-auto py-8 px-4 sm:px-6 lg:px-8 w-full flex flex-col-reverse lg:flex-row justify-between items-center gap-8'>
-          <div className='w-full lg:w-[30%]'>
+        <div className='flex flex-col justify-center items-start lg:items-center'>
+          <h2 className='text-4xl'>Holiday Book Sale</h2>
+          <p className='text-xl pb-4'>
+            <em className='text-3xl'>15 NOV 2025 - 26 DEC 2025</em>
+          </p>
+        </div>
+        <div className='flex flex-col lg:flex-row-reverse justify-center items-center gap-6 w-full'>
+          <div className='w-full lg:w-1/2'>
+            <p className='mb-3'>
+              I have the world&apos;s best fans and I am so grateful for all of
+              you. I hope to be able to do more sales like this in the future.
+              Because of all of you, I have sold more copies of Pulchra in the
+              last 3 months than I have sold in the last 7 years of being a
+              published author. From the bottom of my heart, thank you. I hope
+              to do more sales like this in the future.
+            </p>
+            <strong className='my-3'>
+              As a thank you to all of my wonderful readers I am offering a sale
+              on my Pulchra Arcanum novel.
+            </strong>
+            <p className='my-3'>
+              The paperback book (typically $19.99) will be $9.99. But this will
+              be a very short-lived deal. Not only will this price be only
+              available through the holidays, it will only be available for the
+              first 50 copies sold.
+            </p>
+            <Button>
+              <Link href='https://shop.ingramspark.com/b/084?params=pxxot9G2Lf1YXj2Cgk2dgyrmtWxutvHllyY9EEohTEH'>
+                Get Your 1 of 50 Discounted Copies Now!
+              </Link>
+            </Button>
+          </div>
+          <div className='w-full lg:w-1/2'>
             <Image
-              src={pulchra}
-              alt='The cover of Pulchra Arcanum with the dragon, wings spread, in front of the setting sun'
-              width={600}
-              height={900}
-              sizes='(max-width: 600px) 90vw, 45vw'
-              className='mx-auto'
+              src={christmas}
+              alt='A cozy Christmas scene with an open book on a wooden table, surrounded by wrapped gifts tied with cinnamon sticks, red-and-white candy canes, pinecones, a glass of milk with a dried orange slice on top, holly with red berries, a red winter sweater with snowflake patterns, and festive cookies shaped like stars.'
+              width={800}
+              height={500}
+              sizes='50vw'
+              className='rounded-xl'
             />
           </div>
+        </div>
+      </section>
+
+      <section id='recent-work' className='w-full max-w-7xl px-8 lg:px-0'>
+        <h2 className='px-4 lg:px-8 text-4xl mb-4 font-bold'>
+          Mandy&apos;s Most Recent Work
+        </h2>
+        <hr className='border-2 w-full lg:w-1/2 mx-auto lg:ml-8' />
+        <div className='mx-auto py-8 px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row justify-between items-start gap-8'>
           <div className='flex flex-col flex-start gap-2 w-full lg:w-[65%]'>
-            <h2 className='text-4xl'>Now Out!</h2>
+            <h3 className='text-3xl'>Pulchra Arcanum</h3>
             <p className='text-xl pb-4'>
-              <em className='text-3xl'>Pulchra Arcanum</em>
-              <br />
               (Book 1 of the Domum Chronicles)
               <br />
               by Mandy Tremelling
@@ -205,10 +243,19 @@ export default function Home() {
               </li>
             </ul>
           </div>
+          <div className='w-full lg:w-[30%]'>
+            <Image
+              src={pulchra}
+              alt='The cover of Pulchra Arcanum with the dragon, wings spread, in front of the setting sun'
+              width={600}
+              height={900}
+              sizes='(max-width: 600px) 90vw, 45vw'
+              className='mx-auto'
+            />
+          </div>
         </div>
       </section>
-
-      <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
+      {/* <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
         <h2 className='px-4 lg:px-8 text-4xl'>Mandy&apos;s Most Recent Work</h2>
         <div className='py-8 px-4 lg:px-8 w-full flex flex-col lg:flex-row justify-between gap-8'>
           <div className='flex flex-col flex-start gap-2 w-full lg:w-[60%]'>
@@ -250,7 +297,7 @@ export default function Home() {
                   </Link>
                 </Button>
               </li> */}
-                <li>
+      {/* <li>
                   <Button>
                     <Link href='https://www.amazon.com/My-World-Glass-Mandy-Tremelling/dp/1726835111/ref=sr_1_1?crid=2LCPKQ4DGI3MX&dib=eyJ2IjoiMSJ9.0rwL-iLf4hBC_sx3W1acRh7UtV1pr4mMNTJzXmocOnQT9G1BSQs37jIPBFKX325sje7ZCyalYumPbBjXWb9Tf_M3ogPZsLYEvoJMNxyrld3JscBaw70o305HzI62_KTMKajOG6y250Rc41uhMA8ghX1KgI-TclvfVETpaSYy75YXRzMEX0NtnEcZr0pNqU23bsWRKutXs2RpQ4d-Imkt_VHkIdBfa86MdRccflTgT1g.VguVNM_AJnqrrmn9Aa-0QWVaKL3vXrm1Z9zgv1oAKIU&dib_tag=se&keywords=my+world+of+glass&qid=1737645969&sprefix=%2Caps%2C137&sr=8-1'>
                       Amazon
@@ -271,10 +318,10 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id='blog' className='w-full max-w-7xl px-4 lg:px-8'>
-        <div className='flex flex-wrap gap-2 justify-between items-center w-full px-6 py-8 bg-zinc-100 dark:bg-neutral-950'>
+        <div className='flex flex-wrap gap-2 justify-between items-center w-full px-6 py-8 bg-zinc-100 dark:bg-neutral-800 rounded-xl'>
           <div className='flex flex-col justify-start'>
             <h2 className='text-2xl font-semibold'>Read the Blog</h2>
             <p className='text-lg'>
@@ -292,7 +339,7 @@ export default function Home() {
           <h3 className='text-center lg:text-left text-2xl font-semibold ml-[1%]'>
             Recent Posts
           </h3>
-          <BlogCards limit={3} currentPage={null} />
+          <BlogCards limit={4} currentPage={null} />
         </div>
       </section>
     </>
