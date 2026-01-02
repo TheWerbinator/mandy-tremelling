@@ -3,9 +3,8 @@ import mandy from "../public/mandy.webp";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import BlogCards from "@/components/BlogCards";
-import christmas from "../public/media/christmas-book.webp";
 import pulchra from "../public/media/pulchra.webp";
-// import mwog from "../public/media/My World of Glass cover.jpg";
+import mwog from "../public/media/My World of Glass cover.jpg";
 // import release_banner from "../public/media/banner.png";
 
 export default function Home() {
@@ -134,7 +133,7 @@ export default function Home() {
         </div>
       </section> */}
 
-      <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
+      {/* <section id='sale' className='w-full max-w-7xl px-8 lg:px-0'>
         <div className='flex flex-col justify-center items-start lg:items-center'>
           <h2 className='text-4xl'>Holiday Book Sale</h2>
           <p className='text-xl pb-4'>
@@ -178,7 +177,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section id='recent-work' className='w-full max-w-7xl px-8 lg:px-0'>
         <h2 className='px-4 lg:px-8 text-4xl mb-4 font-bold'>
@@ -255,8 +254,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
-        <h2 className='px-4 lg:px-8 text-4xl'>Mandy&apos;s Most Recent Work</h2>
+      <section id='coming-soon' className='w-full max-w-7xl px-8 lg:px-0'>
+        <h2 className='px-4 lg:px-8 text-4xl mb-4 font-bold'>
+          Other Works by Mandy
+        </h2>
+        <hr className='border-2 w-full lg:w-1/2 mx-auto lg:ml-8' />
         <div className='py-8 px-4 lg:px-8 w-full flex flex-col lg:flex-row justify-between gap-8'>
           <div className='flex flex-col flex-start gap-2 w-full lg:w-[60%]'>
             <h3 className='font-bold text-3xl'>My World of Glass</h3>
@@ -290,14 +292,14 @@ export default function Home() {
                     </Link>
                   </Button>
                 </li>
-                {/* {/* <li>
-                <Button>
-                  <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356?ean=9798998838026'>
-                    Hardcover (which includes a bonus chapter)
-                  </Link>
-                </Button>
-              </li> */}
-      {/* <li>
+                <li>
+                  <Button>
+                    <Link href='https://www.barnesandnoble.com/w/pulchra-arcanum-mandy-tremelling/1147376356?ean=9798998838026'>
+                      Hardcover (which includes a bonus chapter)
+                    </Link>
+                  </Button>
+                </li>
+                <li>
                   <Button>
                     <Link href='https://www.amazon.com/My-World-Glass-Mandy-Tremelling/dp/1726835111/ref=sr_1_1?crid=2LCPKQ4DGI3MX&dib=eyJ2IjoiMSJ9.0rwL-iLf4hBC_sx3W1acRh7UtV1pr4mMNTJzXmocOnQT9G1BSQs37jIPBFKX325sje7ZCyalYumPbBjXWb9Tf_M3ogPZsLYEvoJMNxyrld3JscBaw70o305HzI62_KTMKajOG6y250Rc41uhMA8ghX1KgI-TclvfVETpaSYy75YXRzMEX0NtnEcZr0pNqU23bsWRKutXs2RpQ4d-Imkt_VHkIdBfa86MdRccflTgT1g.VguVNM_AJnqrrmn9Aa-0QWVaKL3vXrm1Z9zgv1oAKIU&dib_tag=se&keywords=my+world+of+glass&qid=1737645969&sprefix=%2Caps%2C137&sr=8-1'>
                       Amazon
@@ -318,7 +320,7 @@ export default function Home() {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       <section id='blog' className='w-full max-w-7xl px-4 lg:px-8'>
         <div className='flex flex-wrap gap-2 justify-between items-center w-full px-6 py-8 bg-zinc-100 dark:bg-neutral-800 rounded-xl'>
